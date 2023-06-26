@@ -1,0 +1,4 @@
+npx sequelize-cli model:generate --name Producto --attributes Codigo_producto:integer,Descripcion_producto:string,Valor_Unitario:float
+npx sequelize-cli model:generate --name Factura --attributes Num_factura:integer,Fecha_factura:time,Cedula_cliente:integer
+npx sequelize-cli model:generate --name Cliente --attributes Nomb_cliente:integer,Dir_cliente:string,Cedula_cliente:integer,Cuidad_cliente:String,Telf_cliente:integer
+npx sequelize-cli model:generate --name Detalles_factura --attributes Categoria_producto:String,Cantidad:integer,Precio:integer,Num_factura:integer,Codigo_producto:integer
